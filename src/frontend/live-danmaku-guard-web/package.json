@@ -1,0 +1,37 @@
+{
+  "name": "live-danmaku-guard-web",
+  "version": "1.0.0",
+  "description": "LiveDanmakuGuard - Multi-platform Live Danmaku Monitoring and Bot Analysis Tool",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "electron:dev": "concurrently \"npm run dev\" \"electron .\"",
+    "electron:build": "npm run build && electron-builder"
+  },
+  "dependencies": {
+    "vue": "^3.4.0",
+    "vue-router": "^4.3.0",
+    "pinia": "^2.1.0",
+    "axios": "^1.6.0",
+    "@microsoft/signalr": "^8.0.0",
+    "naive-ui": "^2.38.0",
+    "echarts": "^5.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.0",
+    "typescript": "^5.4.0",
+    "electron": "^29.0.0",
+    "electron-builder": "^24.13.0",
+    "concurrently": "^8.2.0",
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0"
+  },
+  "main": "electron/main.js",
+  "author": "Changjian Wang",
+  "license": "MIT"
+}
